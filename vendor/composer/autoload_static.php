@@ -6,6 +6,20 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit7dd10f242c6bfdc7d8914d1147cc57ab
 {
+    public static $prefixLengthsPsr4 = array (
+        'D' => 
+        array (
+            'DiogoJb9p06y\\ApiMercadolivreTeste\\' => 34,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'DiogoJb9p06y\\ApiMercadolivreTeste\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
+    );
+
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
@@ -13,6 +27,8 @@ class ComposerStaticInit7dd10f242c6bfdc7d8914d1147cc57ab
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInit7dd10f242c6bfdc7d8914d1147cc57ab::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit7dd10f242c6bfdc7d8914d1147cc57ab::$prefixDirsPsr4;
             $loader->classMap = ComposerStaticInit7dd10f242c6bfdc7d8914d1147cc57ab::$classMap;
 
         }, null, ClassLoader::class);
