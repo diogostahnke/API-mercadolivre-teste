@@ -1,6 +1,5 @@
 <?php
 session_start();
-require 'login.php';
 
-echo $access_token;
+echo $_SESSION['access_token'];
 ?>
