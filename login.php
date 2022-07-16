@@ -32,5 +32,6 @@ $result = curl_exec($ch);
 
 curl_close($ch);
 $decoded = json_decode($result);
-header("Location: index.php");
+
+header("Location: index.php")
 ?>
