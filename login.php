@@ -1,5 +1,5 @@
 <?php 
-
+session_start();
 //The url you wish to send the POST request to
 $url = "https://api.mercadolibre.com/oauth/token";
 
@@ -33,6 +33,6 @@ $result = curl_exec($ch);
 
 curl_close($ch);
 $decoded = json_decode($result);
-print_r($decoded->{'access_token'});
+$_SESSION['access_token']($decoded->{'access_token'});
 
 ?>
