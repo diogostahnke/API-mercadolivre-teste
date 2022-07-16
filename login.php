@@ -1,5 +1,5 @@
 <?php 
-
+session_start();
 //The url you wish to send the POST request to
 $url = "https://api.mercadolibre.com/oauth/token";
 
