@@ -33,6 +33,6 @@ $result = curl_exec($ch);
 
 curl_close($ch);
 $decoded = json_decode($result);
-print_r($decoded->{'access_token'});
+$_SESSION['access_token'] = $decoded->{'access_token'});
 header("Location: index.php")
 ?>
