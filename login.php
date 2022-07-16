@@ -32,5 +32,5 @@ $result = curl_exec($ch);
 
 curl_close($ch);
 $decoded = json_decode($result);
-print_r($decoded->{'refresh_token'});
+print_r($decoded);
 ?>
