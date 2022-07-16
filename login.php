@@ -34,5 +34,5 @@ $result = curl_exec($ch);
 curl_close($ch);
 $decoded = json_decode($result);
 $_SESSION['access_token'] = $decoded->{'access_token'};
-header('index.php');
+header('Location: index.php');
 ?>
