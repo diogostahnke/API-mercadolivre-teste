@@ -32,4 +32,6 @@ $result = curl_exec($ch);
 
 curl_close($ch);
 $decoded = json_decode($result);
+
+echo $decoded->{acces_token};
 ?>
