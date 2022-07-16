@@ -1,5 +1,5 @@
 <?php
-include 'login.php';
+include 'notifications.php.php';
 
-print_r($decoded->{'access_token'});
+print_r($decodede);
 ?>
